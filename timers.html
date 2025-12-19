@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers</title>
+    <script>
+        function DisplayTime(){
+            var CurrentTime=new Date();
+          document.title= CurrentTime.toLocaleTimeString();
+
+        }
+        function StartTimer(){
+            DisplayTime();
+            t=setInterval(DisplayTime, 1000);
+        }
+        function SpotTimer(){
+            clearInterval(t);
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="button" value="Start Time" onclick="StartTimer()">
+    <input type="button" value="Stop Time" onclick="SpotTimer()">
+</body>
+</html>

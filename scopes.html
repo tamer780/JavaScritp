@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+    <script>
+        // var x;// initailiz undefined; globle scope
+        // t=20;//must initialize     //  globle scope without var; 
+        // function myfun(){
+        //     var a=10 // local scope
+        //     b=20;//global scope 
+        //     console.log("a"+a);
+        // }
+        // myfun,(,);
+        // console.log("b => " +b) //=> 20;
+      // var mystr="ITI Smart Bransh";
+    //     var result='';
+    //     for(var i=0;i<mystr.length;i++){  // block scope
+    //         if(mystr[i].toLocaleLowerCase()==mystr[i]){
+    //            result+= mystr[i].toLocaleUpperCase();
+    //         }else{
+    //            result+= mystr[i].toLocaleLowerCase();
+    //         }
+    //     }
+    //     mystr=result
+    //    console.log("after Loop"+mystr);
+// var myarr=[10,20,30,40,50];//dense array // array iteration can use for loop ang for..in loop and for of loop
+
+// var arrAssociative=[];//associative array
+// arrAssociative["name"]="ITI";
+// arrAssociative["address"]="Smart Bransh";
+// arrAssociative["course"]="JS";
+ //for(var key in arrAssociative){
+//    console.log(key+" => "+arrAssociative[key]);} //array associative iteration can use for..in loop only like object
+    //  var arrSorting=[100,10,60,81,2,5,6,-1,5,-10];
+    //  arrSorting.sort(function(a,b){return a-b});//ascending
+    //  myarr.filter(function(value,index,array){
+    //     return value>20;
+    //  })
+     
+     var myarr=[5,5,9,8,7,6,2,1,5,3,5,4];
+     myarr.join("+");
+     eval(myarr.join("+"));
+     console.log(eval(myarr.join("+")));
+     var userInput="1,5,8,9,4,5,87,4,5,5,8";
+     eval(userInput.split(",").join("+"));
+     console.log(eval(userInput.split(",").join("+")));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
